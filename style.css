@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    box-sizing: border-box;
+}
+.done{
+    text-decoration: line-through;
+}
+
+#todoList{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+#addTask{
+    display: flex;
+    flex-wrap: wrap;
+}
+#addTask input{
+    flex-grow: 1000000;
+    flex-basis: 200px;
+}
+#addTask button{
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+.task-list ul{
+    list-style: none;
+}
+.task-list li{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
