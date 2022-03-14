@@ -19,6 +19,7 @@ const todoList = new Vue({
                 done: false,
             }
             this.taskList.push(newTask);
+            this.newTask = '';
         }
     }
 })
