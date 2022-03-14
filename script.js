@@ -4,7 +4,7 @@ const todoList = new Vue({
         newTask: '',
         taskList:[
             {
-                text: 'fare i compiti',
+                text: 'Fare i compiti',
                 done: false,
             }
         ],
@@ -15,7 +15,7 @@ const todoList = new Vue({
         },
         addTask(){
             const newTask = {
-                text: this.newTask.trim(),
+                text: this.newTask.trim()[0].toUpperCase() + this.newTask.trim().slice(1).toLowerCase() ,
                 done: false,
             }
             this.taskList.push(newTask);

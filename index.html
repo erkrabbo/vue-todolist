@@ -11,7 +11,7 @@
 </head>
 <body>
     <main id = "todoList">
-        <form id="addTask" @submit.stop.prevent = "addTask">
+        <form id="addTask" @submit.prevent = "addTask">
             <input type="text" v-model="newTask" placeholder="New Task" size = "1">
             <button type="submit">Add</button>
         </form>
@@ -20,7 +20,7 @@
             <ul>
                 <li v-for = "(task, index) in taskList" @click = "taskList[index].done = !taskList[index].done" >
                     <span :class = "taskList[index].done ? 'done' : ''" @click = "taskList[index].done = !taskList[index].done">{{ taskList[index].text }}</span>
-                    <button @click.stop.prevent = "removeTask(index)">&cross;</button>
+                    <button @click.stop = "removeTask(index)">&cross;</button>
                 </li>
             </ul>
         </div>

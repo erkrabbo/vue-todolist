@@ -20,6 +20,7 @@
 #addTask{
     display: flex;
     flex-wrap: wrap;
+    gap: .5rem;
 }
 #addTask input{
     flex-grow: 1000000;
@@ -36,4 +37,5 @@
     padding: .5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
