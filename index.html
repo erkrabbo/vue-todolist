@@ -19,7 +19,7 @@
         <div class="task-list">
             <ul>
                 <li v-for = "(task, index) in taskList" @click = "taskList[index].done = !taskList[index].done" >
-                    <span :class = "taskList[index].done ? 'done' : ''" @click = "taskList[index].done = !taskList[index].done">{{ taskList[index].text }}</span>
+                    <span :class = "{'done': taskList[index].done}" @click = "taskList[index].done = !taskList[index].done">{{ taskList[index].text }}</span>
                     <button @click.stop = "removeTask(index)">&cross;</button>
                 </li>
             </ul>
