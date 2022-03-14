@@ -4,7 +4,6 @@ const todoList = new Vue({
         newTask: '',
         taskList:[
             {
-                // id: 0,
                 text: 'fare i compiti',
                 done: false,
             }
